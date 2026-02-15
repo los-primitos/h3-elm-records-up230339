@@ -1,26 +1,36 @@
 module Helper exposing (..)
 
 ------------------ ADD2 -----------------------
+
+
 add2 : Int -> Int -> Int
 add2 int1 int2 =
     int1 + int2
 
 
+
 -------------------- ADD3 --------------------
+
+
 add3 : Float -> Float -> Float -> Float
 add3 int1 int2 int3 =
     int1 + int2 + int3
 
 
+
 ----------------------- CALC ------------------------
+
+
 calc : Int -> Int -> (Int -> Int -> Int) -> Int
 calc int1 int2 operator =
     operator int1 int2
 
 
----------------------- RECORDS -----------------------------
 
+---------------------- RECORDS -----------------------------
 ----------------- 1 ---------------------------
+
+
 type alias ProgrammingLanguage =
     { name : String
     , releaseYear : Int
@@ -40,7 +50,10 @@ languageNames langs =
     List.map .name langs
 
 
+
 ------------------- 2 -----------------------
+
+
 type alias User =
     { name : String
     , uType : String
@@ -61,13 +74,16 @@ onlyStudents userList =
         (\user ->
             if user.uType == "Student" then
                 user.name
+
             else
                 ""
         )
         userList
 
 
+
 --------------------------- ALIASES -------------------
+
 
 type alias Videogame =
     { title : String
