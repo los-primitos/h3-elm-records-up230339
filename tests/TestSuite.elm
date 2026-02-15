@@ -1,5 +1,4 @@
 module TestSuite exposing (..)
-import Main exposing (main, myLaptop)
 
 
 import Expect 
