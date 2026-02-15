@@ -1,11 +1,13 @@
 module TestSuite exposing (..)
+import Main exposing (main, myLaptop)
 
-import Expect exposing (Expectation)
-import Fuzz exposing (Fuzzer, floatRange, int, list, string)
+
+import Expect 
+import Fuzz exposing (Fuzzer, floatRange, int, list)
 import Helper exposing (..)
 import Test exposing (..)
 import Test.Html.Query as Query
-import Test.Html.Selector exposing (containing, exactText, tag, text)
+import Test.Html.Selector exposing (containing, exactText, tag)
 
 
 add2Test : Test
